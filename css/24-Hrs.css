@@ -1,0 +1,47 @@
+.clock-format-text{
+    color:#efefef ;
+    font-size:0.9em;
+    margin-right: 20px;
+}
+
+.format-switch-btn{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width:35px;
+    height:15px;
+    background:#2b2a2a;
+    border-radius:75px;
+    box-shadow: inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+                inset -2px -2px 4px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.format-switch-btn:before{
+    content:'';
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    width:14px;
+    height:14px;
+    background:#494848;
+    border-radius:50%;
+    box-shadow:0 5px 25px #000000;
+    transform: translateX(-10px);
+    transform: 0.3 ease;
+    transition-property: background,transform;
+
+}
+
+.format-switch-btn.active{
+    background:transparent;/*rgb(131, 130, 133);*/
+    box-shadow:0 5px 25px #000000;
+}
+.format-switch-btn.active:before {
+    background:#ffffff;
+    box-shadow:0 5px 25px #ffffff;
+    transform: translateX(10px);
+}

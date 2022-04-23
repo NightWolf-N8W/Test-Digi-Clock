@@ -1,0 +1,19 @@
+.dot-menu{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    top: 40px;
+    right: 0px;
+    z-index: 999;
+    list-style: none;
+    background:transparent;
+    padding: 10px 40px;
+    border-radius:4px;
+    visibility: hidden;
+    opacity: 0;
+    transition:0.3 ease;
+}
+.dot-menu.active{
+    visibility: visible;
+    opacity: 1;
+}
