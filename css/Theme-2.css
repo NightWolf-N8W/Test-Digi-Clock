@@ -25,7 +25,7 @@ body
     justify-content: center;
 	align-items: center;
 	display: flex;
-	gap: 90px;
+	gap: 150px;
 
 }
 
@@ -121,38 +121,17 @@ body
     src: url(Fonts/N8W_Digi_Clock_Font.ttf);
 }
 
+.time2.active{
+	font-size: 20px;
+}
+
 .theme-format-text.Theme2{
     background: #2f363e;
     visibility: hidden;
 }
 
 
-#hours{
-    font-family: digitalfont;
-    font-size: 30px;
-}
-  
-#minutes{
-    font-family: digitalfont;
-    font-size: 30px;
-}
-  
-#seconds{
-    font-family: digitalfont;
-    font-size: 30px;
-}
-  
-.Color-picker{
-    display:none;
-    opacity: 0;
-    
-}
-  
-.Color-picker.tc2{
-    display:flex;
-    opacity: 1;
-}
-  
+
 #ampm{
     
     -webkit-box-reflect: below 250px linear-gradient(transparent, rgba(255, 255, 255, 0.2));
@@ -179,6 +158,7 @@ body
 #hours{
     font-family: digitalfont;
     font-size: 30px;
+
 }
   
 #minutes{
@@ -193,11 +173,12 @@ body
 
 .date2{
     transition: .7s;
-    font-size: 20px;
+    
     font-weight:600;
     text-align: center;
     letter-spacing: 3px;
 	font-family: digitalfont;
+	font-size: 20px;
 }
 
 
@@ -209,9 +190,10 @@ body
     visibility: visible;
 	letter-spacing:10px;
 	font-weight: normal;
-    font-size: 19px;
+    font-size: 25px;
 	position: relative;
 	top: -155px;
+	left: -50px;
 }
 
 header{
