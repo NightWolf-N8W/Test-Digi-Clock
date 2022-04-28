@@ -28,17 +28,18 @@ function updateClock() {
         pe = "AM";
         
         var formatValue = formatSwitchBtn.getAttribute("data-format");
-        
-        if(hou >= 12){
-            hou = hou - 12
-            pe = "PM";
+        if(formatValue == "12"){
+            if(hou >= 12){
+                hou = hou - 12
+                pe = "PM";
+            }
+            if(hou == 0){
+                hou = 12
+            
+            }
         }
-        if(hou == 0){
-             hou = 12
-        
-        }
-        if(formatValue === "24"){
-            hou = hou+12
+        if(formatValue == "24"){
+            
             pe = "";
         }
         Number.prototype.pad=function(digits){
